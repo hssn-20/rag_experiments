@@ -29,7 +29,7 @@ def read_csv_row_by_row(file_path):
 @st.cache_resource
 def add_data_to_app():
     app = sadhguru_ai()
-    url = "https://raw.githubusercontent.com/hssn-20/rag_experiments/main/biology/links.csv"  # noqa:E501
+    url = "https://raw.githubusercontent.com/hssn-20/rag_experiments/main/biology/websites.csv"  # noqa:E501
     response = requests.get(url)
     csv_file = StringIO(response.text)
     for row in csv.reader(csv_file):
@@ -40,7 +40,7 @@ def add_data_to_app():
 app = sadhguru_ai()
 add_data_to_app()
 
-assistant_avatar_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sadhguru-Jaggi-Vasudev.jpg/640px-Sadhguru-Jaggi-Vasudev.jpg"  # noqa: E501
+assistant_avatar_url = "https://upload.wikimedia.org/wikipedia/commons/d/d1/Sheikh_Muhammad_Al_Hassan_Al-Dedew.png"  # noqa: E501
 
 
 st.title("🙏 Shaykh AI")
