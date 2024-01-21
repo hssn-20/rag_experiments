@@ -13,7 +13,7 @@ from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
 
 
 @st.cache_resource
-def shaikh_ai():
+def sadhgu_ai():
     app = App()
     return app
 
@@ -29,7 +29,7 @@ def read_csv_row_by_row(file_path):
 @st.cache_resource
 def add_data_to_app():
     app = sadhguru_ai()
-    url = "https://gist.githubusercontent.com/deshraj/50b0597157e04829bbbb7bc418be6ccb/raw/95b0f1547028c39691f5c7db04d362baa597f3f4/data.csv"  # noqa:E501
+    url = "https://raw.githubusercontent.com/hssn-20/rag_experiments/main/biology/links.csv"  # noqa:E501
     response = requests.get(url)
     csv_file = StringIO(response.text)
     for row in csv.reader(csv_file):
