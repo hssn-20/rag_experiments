@@ -76,8 +76,8 @@ if prompt := st.chat_input("Ask me anything!"):
         q = queue.Queue()
 
         def app_response(result):
-            config = BaseLlmConfig(stream=True, callbacks=[StreamingStdOutCallbackHandlerYield(q)])
-            config.llm.config.model = 'gpt-3.5-turbo-1106'
+            config = BaseLlmConfig(stream=True, callbacks=[StreamingStdOutCallbackHandlerYield(q)], model = 'gpt-3.5-turbo-1106')
+       #     config.llm.config.model = 'gpt-3.5-turbo-1106'
             answer, citations = app.chat(prompt, config=config, citations=True)
             result["answer"] = answer
             result["citations"] = citations
