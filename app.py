@@ -43,9 +43,9 @@ add_data_to_app()
 assistant_avatar_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sadhguru-Jaggi-Vasudev.jpg/640px-Sadhguru-Jaggi-Vasudev.jpg"  # noqa: E501
 
 
-st.title("🙏 Sadhguru AI")
+st.title("🙏 Shaykh AI")
 
-styled_caption = '<p style="font-size: 17px; color: #aaa;">🚀 An <a href="https://github.com/embedchain/embedchain">Embedchain</a> app powered with Sadhguru\'s wisdom!</p>'  # noqa: E501
+styled_caption = '<p style="font-size: 17px; color: #aaa;">🚀 An AI app powered with wisdom from a bunch of books!</p>'  # noqa: E501
 st.markdown(styled_caption, unsafe_allow_html=True)  # noqa: E501
 
 if "messages" not in st.session_state:
@@ -53,7 +53,7 @@ if "messages" not in st.session_state:
         {
             "role": "assistant",
             "content": """
-                Hi, I'm Sadhguru AI! I'm a mystic, yogi, visionary, and spiritual master. I'm here to answer your questions about life, the universe, and everything.
+                Hi, I'm Shaykh AI! I'm a mystic, yogi, visionary, and spiritual master. I'm here to answer your questions about hadith, the universe, and everything.
             """,  # noqa: E501
         }
     ]
