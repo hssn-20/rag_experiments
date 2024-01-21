@@ -14,7 +14,7 @@ from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
 
 @st.cache_resource
 def sadhguru_ai():
-    app = App()
+    app = App.from_config(config_path="chroma.yaml")
     return app
 
 
