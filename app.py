@@ -53,7 +53,7 @@ if "messages" not in st.session_state:
         {
             "role": "assistant",
             "content": """
-                Hi, I'm Shaykh AI! I'm a mystic, yogi, visionary, and spiritual master. I'm here to answer your questions about hadith, the universe, and everything.
+                Hi, I'm Shaykh AI! Made in Dundee. I'm here to answer your questions about hadith, the universe, and everything.
             """,  # noqa: E501
         }
     ]
