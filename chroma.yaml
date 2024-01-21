@@ -11,6 +11,13 @@ llm:
     top_p: 1
     stream: false
 
+vectordb:
+  provider: chroma
+  config:
+    collection_name: 'my-app'
+    dir: db
+    allow_reset: true
+
 embedder:
   provider: openai
   config:
