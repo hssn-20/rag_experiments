@@ -13,7 +13,7 @@ from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
 
 
 @st.cache_resource
-def sadhgu_ai():
+def sadhguru_ai():
     app = App()
     return app
 
