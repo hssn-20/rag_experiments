@@ -34,8 +34,7 @@ def add_data_to_app():
     csv_file = StringIO(response.text)
     for row in csv.reader(csv_file):
         if row and row[0] != "url":
-            print(row[0])
-            app.add(row[0], data_type='web_page')
+            app.add(row[0], data_type="web_page")
 
 
 app = sadhguru_ai()
