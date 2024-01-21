@@ -45,7 +45,7 @@ assistant_avatar_url = "https://upload.wikimedia.org/wikipedia/commons/d/d1/Shei
 
 st.title("🙏 Shaykh AI")
 
-styled_caption = '<p style="font-size: 17px; color: #aaa;">🚀 An AI app powered with wisdom from a bunch of books!</p>'  # noqa: E501
+styled_caption = '<p style="font-size: 17px; color: #aaa;">🚀 An AI app powered with wisdom from sunnah.com!</p>'  # noqa: E501
 st.markdown(styled_caption, unsafe_allow_html=True)  # noqa: E501
 
 if "messages" not in st.session_state:
